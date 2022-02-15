@@ -77,29 +77,29 @@ for (let i=0; i<Brackets.length-1; i++){
         `
         <div class = 'round'>
             <div class = 'splash'>
-                <img class = 'img' src = './Assets/madness-49.png'>
+                <img class = 'img' src = 'Assets/madness-49.png'>
                 <p id = 'openInfo'> Information </p>
 
                 <div class = 'sponsors'>
                     <h2> Sponsored By </h2>
                     <div>
                         <a href = 'https://www.tapintuit.co/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-tapintuit.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-tapintuit.png' alt = 'Sponsor'>
                         </a>
                         <a href = 'https://dumbmoney.tv/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-dumbmoney.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-dumbmoney.png' alt = 'Sponsor'>
                         </a>
                         <a href = 'https://bullish.studio/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-bullish.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-bullish.png' alt = 'Sponsor'>
                         </a>
                         <a href = 'https://fremontcapitalpartners.com/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-fremont.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-fremont.png' alt = 'Sponsor'>
                         </a>
                         <a href = 'https://tradingview.com/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-tradingview.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-tradingview.png' alt = 'Sponsor'>
                         </a>
                         <a href = 'https://seekingalpha.com/' target = '_blank'>
-                            <img src = 'Assets/logos/logo-seekingalpha.png' alt = 'Sponsor'>
+                            <img src = 'logos/logo-seekingalpha.png' alt = 'Sponsor'>
                         </a>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ for (let i=0; i<Brackets.length-1; i++){
             if (name){
                 match +=
                 `
-                    <img src = './Assets/logos/logo-${name}.png'>
+                    <img src = 'logos/logo-${name}.png'>
                     <h1> ${name} </h1>
                     <h2> ${fullName} </h2>
                     <h3> ${seed} </h3>
@@ -223,10 +223,10 @@ function setElems(){
             block.childNodes[3].innerHTML = name
             block.childNodes[5].innerHTML = findFullName(name)
             block.childNodes[7].innerHTML = findSeed(name)
-            block.childNodes[1].src = `./Assets/logos/logo-${name}.png`
+            block.childNodes[1].src = `logos/logo-${name}.png`
             block.childNodes[1].classList.remove('undecided')
         }else{
-           // block.childNodes[1].src = `Assets/wolf-logo-2.png`
+            block.childNodes[1].src = `Assets/wolf-blue.png`
             block.childNodes[1].classList.add('undecided')
         }
     }

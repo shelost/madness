@@ -150,7 +150,7 @@ function Info(arg){
 
 // Initialize images
 let Madness = new Image()
-Madness.src = 'Assets/logos/madness-50.png'
+Madness.src = 'logos/madness-50.png'
 
 let Logo = new Image()
 Logo.src = 'https://wolf-images-public.s3.amazonaws.com/fc836af3-6310-4fab-a729-64874652296f/appicon-wolf.png'
@@ -229,7 +229,7 @@ for (let i=0; i<Sponsors.length; i++){
     let sponsor = Sponsors[i][0]
 
     let img = new Image()
-    img.src = `./Assets/logos/logo-${sponsor}.png`
+    img.src = `logos/logo-${sponsor}.png`
 
     let block = new Button(canvas.width/2-bHeight*7.75+bHeight*4*i, canvas.height/2+bHeight*13.75, bHeight*3.5, bHeight*3.5, 10, '#a0a0a0', 'white', () => {Link(Sponsors[i][1])}, 'Reset')
 
@@ -334,7 +334,7 @@ function setNames(){
         b.fullName = findFullName(b.name)
         b.seed = findSeed(b.name)
         if (b.name){
-            b.image.src = `./Assets/logos/0.06x/logo-48-${b.name}.png`
+            b.image.src = `0.06x/logo-48-${b.name}.png`
         }
     }
     setBackground()
@@ -772,7 +772,7 @@ function Block(round,match,position){
     if (fullName){
         this.fullName = fullName
         this.seed = seed
-        this.image.src = `./Assets/logos/0.06x/logo-48-${this.name}.png`
+        this.image.src = `0.06x/logo-48-${this.name}.png`
     }
 
     let coords = setCoords(round, match, position)
